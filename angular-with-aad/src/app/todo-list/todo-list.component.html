@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">owner_id</th>
+            <th scope="col">name</th>
+            <th scope="col">is_completed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let itm of todoList.items">
+            <th scope="row">{{ itm.id }}</th>
+            <th scope="col">{{ itm.owner_id }}</th>
+            <th scope="col">{{ itm.name }}</th>
+            <th scope="col">{{ itm.is_completed }}</th>
+        </tr>
+    </tbody>
+</table>
